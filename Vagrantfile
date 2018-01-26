@@ -9,16 +9,16 @@ Vagrant.configure("2") do |config|
     vb.cpus = 2
   end
   
-  config.vm.define "t1" do | t1 |
-    t1.vm.box = "ubuntu/xenial64"
-    t1.vm.network "private_network", ip: "10.0.0.11"
-    t1.vm.hostname = "t1"
+  config.vm.define "u1" do | u1 |
+    u1.vm.box = "ubuntu/xenial64"
+    u1.vm.network "private_network", ip: "10.0.0.11"
+    u1.vm.hostname = "u1"
   end
 
-  config.vm.define "t2" do | t1 |
-    t1.vm.box = "ubuntu/xenial64"
-    t1.vm.network "private_network", ip: "10.0.0.22"
-    t1.vm.hostname = "t2"
+  config.vm.define "u2" do | u2 |
+    u2.vm.box = "ubuntu/xenial64"
+    u2.vm.network "private_network", ip: "10.0.0.22"
+    u2.vm.hostname = "u2"
   end
 
   config.vm.define "c1" do | c1 |
